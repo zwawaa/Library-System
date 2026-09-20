@@ -1,11 +1,11 @@
 # Library System
 
 ## Description
-<<<<<<< Updated upstream
+Updated upstream
 Simple Library Information System
 =======
 Library System Information System
->>>>>>> Stashed changes
+Stashed changes
 
 ## Requirements
 * PHP
