@@ -7,8 +7,8 @@ Sistem Informasi Perpustakaan Sederhana menggunakan Laravel, dibuat untuk tugas 
 - Dashboard: ringkasan jumlah buku, kategori, dan member
 - Daftar Buku: menampilkan judul, penulis, dan tahun terbit
 - Detail Buku: menampilkan data buku berdasarkan ID pada URL
-- Daftar Kategori
-- Daftar Member
+- Daftar Kategori: menampilkan daftar kategori buku
+- Daftar Member: menampilkan daftar member
 
 ## Requirements
 
