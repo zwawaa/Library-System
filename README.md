@@ -1,27 +1,26 @@
 # Library System
 
-## Description
-Updated upstream
-Simple Library Information System
-=======
-Library System Information System
-Stashed changes
+Sistem Informasi Perpustakaan Sederhana menggunakan Laravel, dibuat untuk tugas praktikum Pemrograman Web Framework Pertemuan 6 (Routing, Controller, dan Blade Template).
+
+## Fitur
+
+- Dashboard: ringkasan jumlah buku, kategori, dan member
+- Daftar Buku: menampilkan judul, penulis, dan tahun terbit
+- Detail Buku: menampilkan data buku berdasarkan ID pada URL
+- Daftar Kategori
+- Daftar Member
 
 ## Requirements
-* PHP
-* Composer
-* MySQL
-* Laravel
+
+- PHP 8.3
+- Composer 2.10
+- Laravel 13
 
 ## Installation
-<<<<<<< Updated upstream
-   git clone [https://github.com/Zahwa-22/Library-System.git](https://github.com/Zahwa-22/Library-System.git)
+
+1. Clone repository:
+git clone https://github.com/zwawaa/Library-System.git
 
 ## Author
-   Zahwa Lamini Arsyi Anjuni
-=======
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/zwawaa/library-system.git]
-   
->>>>>>> Stashed changes
+
+[Zahwa Lamini Arsyi Anjuni]
