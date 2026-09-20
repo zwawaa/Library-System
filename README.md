@@ -23,4 +23,4 @@ git clone https://github.com/zwawaa/Library-System.git
 
 ## Author
 
-[Zahwa Lamini Arsyi Anjuni]
+Zahwa Lamini Arsyi Anjuni
