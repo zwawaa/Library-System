@@ -11,6 +11,10 @@
     @if (session('success'))
         <p style="color: green;">{{ session('success') }}</p>
     @endif
+    <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button type="submit">Logout</button>
+    </form>
 
     <p><a href="{{ route('books.create') }}">+ Tambah Buku</a></p>
 
