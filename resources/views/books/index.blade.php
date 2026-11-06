@@ -11,10 +11,16 @@
     @if (session('success'))
         <p style="color: green;">{{ session('success') }}</p>
     @endif
+
     <form action="{{ route('logout') }}" method="POST">
         @csrf
         <button type="submit">Logout</button>
     </form>
+
+    {{-- Menu hanya tampil untuk admin (Gate manage-users) --}}
+    @can('manage-users')
+        <p><a href="{{ route('users.index') }}">Kelola Pengguna</a></p>
+    @endcan
 
     <p><a href="{{ route('books.create') }}">+ Tambah Buku</a></p>
 
@@ -41,15 +47,20 @@
                     <td>{{ $book->stock }}</td>
                     <td>
                         <a href="{{ route('books.show', $book) }}">Detail</a> |
-                        <a href="{{ route('books.edit', $book) }}">Edit</a> |
-                        <form action="{{ route('books.destroy', $book) }}"
-                              method="POST"
-                              style="display:inline"
-                              onsubmit="return confirm('Yakin hapus buku ini?')">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Hapus</button>
-                        </form>
+                        <a href="{{ route('books.edit', $book) }}">Edit</a>
+
+                        {{-- Tombol Hapus dicek lewat BookPolicy --}}
+                        @can('delete', $book)
+                            |
+                            <form action="{{ route('books.destroy', $book) }}"
+                                  method="POST"
+                                  style="display:inline"
+                                  onsubmit="return confirm('Yakin hapus buku ini?')">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">Hapus</button>
+                            </form>
+                        @endcan
                     </td>
                 </tr>
             @empty
